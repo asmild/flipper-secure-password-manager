@@ -1,0 +1,15 @@
+App(
+    appid=secure_"password_manager",
+    name="Secure Password Manager",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="password_manager_app",
+    requires=["gui", "cli", "dialogs", "storage", "input", "notification", "bt", "usb_hid"],
+    stack_size=2 * 1024,
+    fap_category="Tools",
+    fap_author="Ildar Asm (@asmild)",
+    #fap_icon="",
+    #fap_file_assets="assets",
+    #fap_libs=["ble_profile"],
+    fap_description="This app keeps your credentials encrypted and locked, and can write them acting as a keyboard via USB or Bluetooth",
+    fap_version=(1, 1)
+)
